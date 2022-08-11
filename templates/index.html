@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>💰 GP Commitment Calculator</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>💰 GP Commitment Calculator 💰</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+
+                <h2>Input the GP commitment percentual and the total fund size/LP commitment</h2>
+
+
+                <form action="/" method="post">
+
+                    <input autocomplete="off" autofocus name="gp_percentage" placeholder="ex: 1%" text="text">
+                    <input autocomplete="off" autofocus name="fund_size" placeholder="ex: U$ 1,000,000.00">
+                    <br>
+                    <input type="submit" value="Calculate" margin="30">
+                </form>
+            </div>
+            <div class="section">
+
+            <h2>GP Commitment is equal to: <br> {{ result | usd }}</h2>
+        </div>
+    </body>
+</html>
